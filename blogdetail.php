@@ -10,6 +10,7 @@ if(empty($_SESSION['user_id']) && empty($_SESSION['logged_in'])){
 $stmt = $pdo->prepare("SELECT * FROM posts WHERE id=".$_GET['id']);  #show blog post
 $stmt->execute();
 $result =$stmt->fetchAll();
+//comment
 
 $blogId = $_GET['id'];
 
